@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --arc-black: #0d0d0d;
+  --arc-red: #d11a2a;
+  --arc-red-hover: #b01321;
+  --arc-grey: #6c757d;
+  --arc-light-bg: #f4f5f7;
+  --arc-card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--arc-light-bg);
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: var(--arc-black);
+  padding-bottom: 50px;
+  -webkit-tap-highlight-color: transparent;
+  user-select: text;
+}
+
+/* Attendance Cell Styles */
+.cell-att-full {
+  background-color: #d1e7dd !important;
+  color: #0f5132 !important;
+  border-color: #a3cfbb !important;
+}
+
+.cell-att-half {
+  background-color: #fff3cd !important;
+  color: #664d03 !important;
+  border-color: #ffe69c !important;
+}
+
+.cell-att-gray {
+  background-color: #e2e3e5 !important;
+  color: #41464b !important;
+  border-color: #c4c8cb !important;
+}
+
+.cell-att-absent {
+  background-color: #f8d7da !important;
+  color: #842029 !important;
+  border-color: #f5c2c7 !important;
+}
+
+.cell-att-sick {
+  background-color: #cff4fc !important;
+  color: #055160 !important;
+  border-color: #9eeaf9 !important;
+}
+
+.cell-att-emergency {
+  background-color: #e0cffc !important;
+  color: #3d0a91 !important;
+  border-color: #c5a3fc !important;
+}
+
+.ot-active {
+  background-color: #fce7f3 !important;
+  border-color: #f472b6 !important;
+  color: #831843 !important;
+  font-weight: 700;
+}
+
+/* Bar Segments for Stacked Progress */
+.bar-seg-full { background-color: #198754; }
+.bar-seg-half { background-color: #ffc107; }
+.bar-seg-gray { background-color: #6c757d; }
+.bar-seg-absent { background-color: #dc3545; }
+.bar-seg-sick { background-color: #0dcaf0; }
+.bar-seg-emergency { background-color: #6f42c1; }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background-color: white !important; padding: 0 !important; }
+}

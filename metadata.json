@@ -1,0 +1,6 @@
+{
+  "name": "ARCDESIGN Timesheet & Attendance Tracker",
+  "description": "Professional timesheet, attendance, overtime, bale, and site analytics tracker for ARCDESIGN Construction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
